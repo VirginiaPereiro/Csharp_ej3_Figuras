@@ -11,11 +11,13 @@ namespace Ejercicio3CS_Figuras
         public String Nombre { get; set; }
         public String Descripcion { get; set; }
 
-        protected Figuras(String nombre,String descripcion)// protected por la herencia, porque no se va a instanciar
+        protected Figuras(String nombre,String descripcion)
+            // protected por la herencia, porque no se va a instanciar
         {
             Nombre = nombre;
             Descripcion = descripcion;
         }
+
         public abstract double Area();
         public abstract double Perimetro();
     }

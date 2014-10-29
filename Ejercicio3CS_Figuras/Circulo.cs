@@ -13,7 +13,6 @@ namespace Ejercicio3CS_Figuras
         public Circulo(double r, String descripcion, String nombre = "Circulo")
             :base(nombre,descripcion)
         {
-
             R = r;
         }
 

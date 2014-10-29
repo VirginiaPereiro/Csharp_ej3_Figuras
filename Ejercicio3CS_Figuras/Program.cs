@@ -43,12 +43,12 @@ namespace Ejercicio3CS_Figuras
             int tamanyoArray;
             int.TryParse(Console.ReadLine(), out tamanyoArray);
             
-            Figuras[] figurasConsola = new Figuras[tamanyoArray];
+            var figurasConsola = new Figuras[tamanyoArray];
 
             for (int i = 0; i < figurasConsola.Length; i++)
             {
                 Console.Write("¿Círculo o rectángulo?");
-                String tipo;
+                String tipo="";
                 tipo = Console.ReadLine();
 
                 if (tipo == "circulo")
@@ -68,10 +68,10 @@ namespace Ejercicio3CS_Figuras
 
             for (int i = 0; i < figurasConsola.Length; i++)
             {
-               var area= figurasConsola[i].Area();
+                var area= figurasConsola[i].Area();
                 Console.WriteLine((i+1)+". "+figurasConsola[i].Nombre);
                 Console.WriteLine(" " + figurasConsola[i].Descripcion);
-               Console.WriteLine("Area: {0}",area);
+                Console.WriteLine("Area: {0:N}", area);// {0:N} para que redondee a dos decimales
             }
             Console.ReadLine();
         }

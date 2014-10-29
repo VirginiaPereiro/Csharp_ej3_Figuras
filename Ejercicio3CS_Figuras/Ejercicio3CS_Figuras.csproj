@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Circulo.cs" />
-    <Compile Include="crearObjConsola.cs" />
     <Compile Include="Figuras.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
