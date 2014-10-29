@@ -27,5 +27,20 @@ namespace Ejercicio3CS_Figuras
             var perimetro = 2*Math.PI*R;
             return perimetro;
         }
+
+      
+
+        //implementamos los métodos de la interfaz que hereda la clase padre
+
+        public override void PrintDetalle(string separador = " ")
+        {
+            Console.WriteLine("Figura " + separador + Nombre +
+                separador + R + separador + Area());
+        }
+
+        public override string GetDetalle()
+        {
+            return String.Format("Figura {0} {1} {2}", Nombre, R, Area());
+        }
     }
 }

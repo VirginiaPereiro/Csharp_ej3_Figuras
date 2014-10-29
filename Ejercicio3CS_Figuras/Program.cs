@@ -73,7 +73,22 @@ namespace Ejercicio3CS_Figuras
                 Console.WriteLine(" " + figurasConsola[i].Descripcion);
                 Console.WriteLine("Area: {0:N}", area);// {0:N} para que redondee a dos decimales
             }
+
             Console.ReadLine();
+
+
+            //CON INTERFACE
+            //más genérico, para instanciar el objeto
+            IDetallable[] f;
+            f=new IDetallable[tamanyoArray];
+
+            foreach (var figura in f)
+            {
+                figura.PrintDetalle("-");
+            }
+
+            Console.ReadLine();
+
         }
 
         //el usurio mete por pantalla el radio para calcular el área y perímetro de la circunferencia

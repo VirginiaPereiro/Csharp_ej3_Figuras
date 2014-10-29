@@ -29,5 +29,22 @@ namespace Ejercicio3CS_Figuras
             var perimetro = (2*B) + (2*H);
             return perimetro;
         }
+
+        public override void PrintDetalle(string separador = " ")
+        {
+            /*Console.WriteLine("Figura " + separador + Nombre +
+                separador + H + separador + separador + B + Area());*/
+
+            String[] datos = {Nombre, B.ToString(), H.ToString(), Area().ToString()};
+            var texto = String.Join(separador, datos);
+            
+            Console.WriteLine(texto);
+        }
+
+      
+        public override string GetDetalle()
+        {
+            return String.Format("Figura {0} {1} {2} {3}", Nombre, H, B, Area());
+        }
     }
 }

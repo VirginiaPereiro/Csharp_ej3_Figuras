@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio3CS_Figuras
 {
-    public abstract class Figuras 
+    public abstract class Figuras:IDetallable 
     {
         public String Nombre { get; set; }
         public String Descripcion { get; set; }
@@ -20,5 +20,10 @@ namespace Ejercicio3CS_Figuras
 
         public abstract double Area();
         public abstract double Perimetro();
+        
+        //implementado de forma abstracta de forma implícita
+        public abstract void PrintDetalle(string separador = " ");
+        public abstract String GetDetalle();
+
     }
 }
